@@ -1,5 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: sasmoota2017.aux
-I found no \citation commands---while reading file sasmoota2017.aux
-I found no \bibdata command---while reading file sasmoota2017.aux
-I found no \bibstyle command---while reading file sasmoota2017.aux
-(There were 3 error messages)
+The style file: IEEEtran.bst
+Database file #1: IEEEabrv.bib
+Database file #2: sasmoota2017.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
