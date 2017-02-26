@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.8)  26 JAN 2017 20:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.18)  26 FEB 2017 20:01
 entering extended mode
-**sasmoota2017.tex
+**./sasmoota2017.tex
 (sasmoota2017.tex
-LaTeX2e <2015/01/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+LaTeX2e <2017/01/01> patch level 1
+Babel <3.9r> and hyphenation patterns for 76 language(s) loaded.
 (sasmoota2017.cls
 Document Class: sasmoota2017 2017/01/26 V0.1 by Eveliina Pakarinen
 \@IEEEtrantmpdimenA=\dimen102
@@ -15,7 +15,7 @@ Document Class: sasmoota2017 2017/01/26 V0.1 by Eveliina Pakarinen
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 490.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+("E:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
@@ -110,6 +110,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \c@IEEEbiography=\count93
 \@IEEEtranrubishbin=\box27
 ) (sasmoota2017.aux)
+\openout1 = `sasmoota2017.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 300.
 LaTeX Font Info:    ... okay on input line 300.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 300.
@@ -124,12 +126,36 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 300.
 LaTeX Font Info:    ... okay on input line 300.
 
 -- Lines per column: 56 (exact).
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ¦ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ˜ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no † in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no † in font ptmr7t!
+Missing character: There is no ’ in font ptmr7t!
+
+Underfull \hbox (badness 3039) in paragraph at lines 492--493
+[]\OT1/ptm/m/n/10 Neutral anal-y-sis based on the data. New ideas/new
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 484.
+(Font)              <8> on input line 538.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 484.
+(Font)              <6> on input line 538.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 484.
+(Font)              <5> on input line 538.
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -141,28 +167,25 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1{C:/Users/Eveliina/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+[2
 
-
-
-]
-(sasmoota2017.aux) ) 
+] (sasmoota2017.aux) ) 
 Here is how much of TeX's memory you used:
- 1060 strings out of 493673
- 19249 string characters out of 3143952
- 73273 words of memory out of 3000000
- 4472 multiletter control sequences out of 15000+200000
- 37650 words of font info for 71 fonts, out of 3000000 for 9000
- 1028 hyphenation exceptions out of 8191
- 26i,7n,19p,208b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.en
-c}<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
-es/utmri8a.pfb>
-Output written on sasmoota2017.pdf (1 page, 43820 bytes).
+ 1059 strings out of 493329
+ 19242 string characters out of 3139063
+ 80957 words of memory out of 3000000
+ 4655 multiletter control sequences out of 15000+200000
+ 36514 words of font info for 70 fonts, out of 3000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 26i,7n,19p,1217b,236s stack positions out of 5000i,500n,10000p,200000b,50000s
+{E:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}
+<E:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files
+/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><E:/Program Files/MiKTeX 2.9/font
+s/type1/urw/times/utmr8a.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on sasmoota2017.pdf (2 pages, 52815 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
+ 26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
