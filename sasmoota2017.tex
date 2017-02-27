@@ -305,7 +305,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{SASMOOTA 2017 Conference Paper}
+\title{Multi-tenancy in Software as a Service Applications}
 
 
 % author names and affiliations
@@ -322,13 +322,13 @@ Helsinki, Finland}}
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-Multi-tenancy is a high level architectural pattern which can be used in cloud computing environment when offering applications using Software as a Service business model. In multi-tenancy pattern service provider hosts a single instance of an application on his or her infrastructure and this application is accessed by multiple tenants who share the resources of the infrastructure. The use of multi-tenancy pattern brings multiple benefits both to the service providers and to the customers but there are also some complexities that affect the use of multi-tenancy. Although multi-tenancy is a popular paradigm it is still a relatively new topic in scientific literature and the research domain of multi-tenancy is not yet mature which can be seen from the lack of industrial experience reports on multi-tenancy. In this paper the key concepts of multi-tenancy in SaaS applications are presented and some concerns that need to be taken into account when developing a multi-tenant SaaS application are discussed. A couple of recently proposed example frameworks for developing a multi-tenant applications are also presented in order to describe the current situation in multi-tenancy research.
+Multi-tenancy is a high level architectural pattern which can be used in cloud computing environment when offering applications using Software as a Service business model. In multi-tenancy pattern service provider hosts a single instance of an application on his or her infrastructure and this application is accessed by multiple tenants who share the resources of the infrastructure. The use of multi-tenancy pattern brings multiple benefits both to the service provider and to the customers but there are also some complexities that affect the use of multi-tenancy. Although multi-tenancy is a popular paradigm it is still a relatively new topic in scientific literature and the research domain of multi-tenancy is not yet mature which can be seen from the lack of industrial experience reports on multi-tenancy. In this paper the key concepts of multi-tenancy in SaaS applications are presented and some concerns that need to be taken into account when developing a multi-tenant SaaS application are discussed. A couple of recently proposed example frameworks for developing multi-tenant applications are also presented in order to describe the current situation in multi-tenancy research.
 
 \end{abstract}
 
 % no keywords
 
-
+Keywords: multi-tenancy, Software as a Service, architectural pattern
 
 
 
@@ -337,21 +337,36 @@ Multi-tenancy is a high level architectural pattern which can be used in cloud c
 
 
 \section{Introduction}
-Software as a Service (SaaS) is a software delivery and business model where an application is provided as an on-demand service for multiple users through Internet (A design of the conceptual architecture for a… 1). In SaaS business model the service provider maintains the application and offers the software as a service to the customers (maintenance dream or nightmare 1). By using software offered by a third party companies can use various IT services without maintaining or purchasing their own IT infrastructure (maintenance dream 1). 
+Software as a Service (SaaS) is a software delivery and business model where an application is provided as an on-demand service for multiple users through Internet \cite[p. 1]{Kang:2011:DesignOfConceptual}. In SaaS business model the service provider maintains the application and offers the software as a service to the customers \cite[p. 1]{Bezemer:2010:MaintenanceDream}. By using software offered by a third party companies can use various IT services without maintaining or purchasing their own IT infrastructure \cite[p. 1]{Bezemer:2010:MaintenanceDream}. 
 
-Multi-tenancy is a high level architectural pattern which can be used when offering applications as Software as a Service in cloud computing environment (Defining multi-tenancy: 1). In multi-tenancy pattern the service provider hosts a single instance of the software product on his or her infrastructure and multiple customers, so called tenants, access the same instance of the software (Maintenance Dream or Nightmare 1). A tenant is the organizational entity which rents a multi-tenant SaaS solution (maintenance dream 2). A tenant groups typically multiple users of the same organization and these users are the stakeholders in the organization. 
+Multi-tenancy is a high level architectural pattern which can be used when offering applications as Software as a Service in cloud computing environment \cite[p. 1]{Kabbedijk2015:Defining}. In multi-tenancy pattern the service provider hosts a single instance of the software product on his or her infrastructure and multiple customers, so called tenants, access the same instance of the software \cite[p. 1]{Bezemer:2010:MaintenanceDream}. A tenant is the organizational entity which rents a multi-tenant SaaS solution \cite[p. 2]{Bezemer:2010:MaintenanceDream}. A tenant groups typically multiple users of the same organization and these users are the stakeholders in the organization. 
 
-There are multiple benefits for the service provider when using multi-tenant architecture pattern when implementing SaaS applications. The first benefit is that the application deployment becomes easier because only one application instance has to be deployed (maintenance dream 1). In multi-tenant model multiple customers access the same software instance and they do not need own dedicated instance of the software. This means that the customers share the same hardware resources when using multi-tenant SaaS application (application multi-tenancy for SaaS 1). That increases and improves the utilization rate of the hardware which is the second benefit of the multi-tenant model (maintenance dream 1). 
+There are multiple benefits for the service provider when using multi-tenant architecture pattern when implementing SaaS applications. The first benefit is that the application deployment becomes easier because only one application instance has to be deployed \cite[p. 1]{Bezemer:2010:MaintenanceDream}. In multi-tenant model multiple customers access the same software instance and they do not need own dedicated instance of the software. This means that the customers share the same hardware resources when using multi-tenant SaaS application \cite[p. 1]{Pal:2015:ApplicationMultiTenancy}. That increases and improves the utilization rate of the hardware which is the second benefit of the multi-tenant model \cite[p. 1]{Bezemer:2010:MaintenanceDream}. 
 
-These two benefits reduce the software delivery costs for the service provider which can help improve the profit margin (a framework for native multi-tenancy application Guo 1). The reduced delivery costs enable that software provider can offer the service to the customers at lower service subscription costs (a framework Guo 1). That makes multi-tenant applications interesting for customers in the small and medium enterprise segment (maintenance dream 1).
+These two benefits reduce the software delivery costs for the service provider which can help improve the profit margin \cite[p. 1]{Guo:2007:FrameworkForNative}. The reduced delivery costs enable that software provider can offer the service to the customers at lower service subscription costs \cite[p. 1]{Guo:2007:FrameworkForNative}. That makes multi-tenant applications interesting for customers in the small and medium enterprise segment \cite[p. 1]{Bezemer:2010:MaintenanceDream}.
 
-In addition to the benefits of the multi-tenancy there are also some complexities that come with the multi-tenancy. Challenges can arise in the application development, deployment and management phases (framework for native Guo 1). Challenges that arise are for example application performance, scalability, security, zero-downtime and maintenance (maintenance dream 3). 
+In addition to the benefits of the multi-tenancy there are also some complexities that come with the multi-tenancy. Challenges can arise in the application development, deployment and management phases \cite[p. 1]{Guo:2007:FrameworkForNative}. Challenges that arise are for example application performance, scalability, security, zero-downtime and maintenance \cite[p. 3]{Bezemer:2010:MaintenanceDream}.
 
-Although multi-tenancy is a popular paradigm it is still a relatively new topic in scientific literature (defining 1). The term ‘multi-tenancy’ was explicitly mentioned for the first time in a scientific paper in year 2006. Since then many definitions for multi-tenancy have been proposed (defining 5). Also many solutions related to multi-tenancy have been proposed in the multi-tenancy research over the years but there has been very few industrial reports about experiences on multi-tenancy (definition 4-5). This indicates that the research domain of multi-tenancy is not yet mature and that the solutions have not yet been implemented or evaluated. The high amount of proposals and the low amount of industrial reports can also indicate that there is a lack of cooperation between industry and academia in this domain (definition 4-5).
+Although multi-tenancy is a popular paradigm it is still a relatively new topic in scientific literature \cite[p. 1]{Kabbedijk2015:Defining}. The term ‘multi-tenancy’ was explicitly mentioned for the first time in a scientific paper in year 2006. Since then many definitions for multi-tenancy have been proposed \cite[p. 5]{Kabbedijk2015:Defining}. Also many solutions related to multi-tenancy have been proposed in the multi-tenancy research over the years but there has been very few industrial reports about experiences on multi-tenancy \cite[p. 4-5]{Kabbedijk2015:Defining}. This indicates that the research domain of multi-tenancy is not yet mature and that the solutions have not yet been implemented or evaluated. The high amount of proposals and the low amount of industrial reports can also indicate that there is a lack of cooperation between industry and academia in this domain \cite[p. 4-5]{Kabbedijk2015:Defining}.
 
-In this paper the key concepts of multi-tenancy in SaaS applications are presented and some concerns that need to be taken into account when developing a multi-tenant SaaS application are discussed. A couple of recently proposed example frameworks for developing a multi-tenant applications are also presented in order to describe the current situation in multi-tenancy research. 
-
+In this paper the key concepts of multi-tenancy in SaaS applications are presented and some concerns that need to be taken into account when developing a multi-tenant SaaS application are discussed. A couple of recently proposed example frameworks for developing a multi-tenant applications are also presented in order to describe the current situation in multi-tenancy research.
+ 
 This paper is organized as follows. In Section 2 the research methods for data collection for this paper are introduced and the research questions are presented. In section 3 an introduction to multi-tenancy and SaaS is given. In section 4 an example architecture framework for multi-tenant architecture is presented. In section 5 the answers to the research questions are discussed. A conclusion is presented in section 6. 
+
+
+%\cite{Kabbedijk2015:Defining}
+%\cite{Bezemer:2010:MaintenanceDream}
+%\cite{Weissman:2009:Forcecom}
+%\cite{Guo:2007:FrameworkForNative}
+%\cite{Kang:2011:DesignOfConceptual}
+%\cite{Pal:2015:ApplicationMultiTenancy}
+%\cite{Schroeter:2012:TowardsModeling}
+%\cite{Samrajesh:2016:ScalableComponent}
+%\cite{Bien:2015:MultiTenantWebApp}
+%\cite{Bezemer:2010:EnablingMultiTenancy}
+%\cite{Ru:2014:SoftareEngineering}
+%\cite{Vidhyalakshmi:2014:DesignComparison}
+%\cite{Mietzner:2009:VariabilityModeling}
 
 
 %\hfill mds
@@ -506,7 +521,7 @@ Main points, message
 
 Probably some mention about future work or what should be researched next
 
-\cite{IEEEhowto:IEEEtranpage}
+
 
 
 
