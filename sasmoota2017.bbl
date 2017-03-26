@@ -47,6 +47,13 @@ C.~J. Guo, W.~Sun, Y.~Huang, Z.~H. Wang, and B.~Gao, ``A framework for native
   International Conference on Enterprise Computing, E-Commerce and E-Services
   (CEC-EEE 2007)}, July 2007, pp. 551--558.
 
+\bibitem{Carraro:2006:ArchitectureLongTail}
+\BIBentryALTinterwordspacing
+F.~Chong and G.~Carraro, ``Architecture strategies for catching the long
+  tail,'' 2006, accessed: 23.03.2017. [Online]. Available:
+  \url{https://msdn.microsoft.com/en-us/library/aa479069.aspx}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Bien:2015:MultiTenantWebApp}
 N.~H. Bien and T.~D. Thu, ``Multi-tenant web application framework architecture
   pattern,'' in \emph{2015 2nd National Foundation for Science and Technology
