@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.18)  26 MAR 2017 16:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.18)  26 MAR 2017 16:38
 entering extended mode
 **./sasmoota2017.tex
 (sasmoota2017.tex
@@ -265,7 +265,12 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-) [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+)
+Underfull \hbox (badness 2435) in paragraph at lines 353--354
+[]\OT1/ptm/m/n/10 The char-ac-ter-is-tics men-tioned when de-scrib-ing multi-
+ []
+
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
@@ -321,17 +326,17 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  3057 strings out of 493329
  49749 string characters out of 3139063
- 120893 words of memory out of 3000000
+ 121893 words of memory out of 3000000
  6555 multiletter control sequences out of 15000+200000
  34143 words of font info for 63 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 39i,7n,37p,1179b,274s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,7n,37p,1188b,274s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}
 <E:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files
 /MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><E:/Program Files/MiKTeX 2.9/font
 s/type1/urw/times/utmr8a.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on sasmoota2017.pdf (6 pages, 271004 bytes).
+Output written on sasmoota2017.pdf (6 pages, 272848 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
