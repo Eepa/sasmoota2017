@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.18)  26 MAR 2017 18:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.18)  26 MAR 2017 19:33
 entering extended mode
 **./sasmoota2017.tex
 (sasmoota2017.tex
@@ -272,32 +272,14 @@ G,.JBIG2,.JB2,.eps]
 <MTvsMILong.png, id=12, 725.71124pt x 1630.09pt>
 File: MTvsMILong.png Graphic file (type png)
  <use MTvsMILong.png>
-Package pdftex.def Info: MTvsMILong.png used on input line 425.
+Package pdftex.def Info: MTvsMILong.png used on input line 429.
 (pdftex.def)             Requested size: 725.70947pt x 1630.08603pt.
-
-Underfull \vbox (badness 4181) has occurred while \output is active []
-
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
- [3 <./MTvsMILong.png (PNG copy)>]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
- <SaaSMaturity.png, id=16, 262.9825pt x 1253.68375pt>
+ [3 <./MTvsMILong.png (PNG copy)>] <SaaSMaturity.png, id=16, 262.9825pt x 1253.
+68375pt>
 File: SaaSMaturity.png Graphic file (type png)
 
 <use SaaSMaturity.png>
-Package pdftex.def Info: SaaSMaturity.png used on input line 462.
+Package pdftex.def Info: SaaSMaturity.png used on input line 466.
 (pdftex.def)             Requested size: 262.98184pt x 1253.6807pt.
  [4] [5 <./SaaSMaturity.png (PNG copy)>]
 (sasmoota2017.bbl)
@@ -312,9 +294,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
-
-] (sasmoota2017.aux) ) 
+[6] (sasmoota2017.aux) ) 
 Here is how much of TeX's memory you used:
  3057 strings out of 493329
  49749 string characters out of 3139063
@@ -322,13 +302,13 @@ Here is how much of TeX's memory you used:
  6555 multiletter control sequences out of 15000+200000
  34143 words of font info for 63 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 39i,7n,37p,1188b,274s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}
-<E:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files
-/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><E:/Program Files/MiKTeX 2.9/font
-s/type1/urw/times/utmr8a.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on sasmoota2017.pdf (6 pages, 272902 bytes).
+ 39i,7n,37p,1175b,274s stack positions out of 5000i,500n,10000p,200000b,50000s
+{E:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
+c}<E:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><E:/Program Fil
+es/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><E:/Program Files/MiKTeX 2.9/fo
+nts/type1/urw/times/utmr8a.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
+es/utmri8a.pfb>
+Output written on sasmoota2017.pdf (6 pages, 273324 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
