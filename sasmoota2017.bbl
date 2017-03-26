@@ -60,4 +60,16 @@ N.~H. Bien and T.~D. Thu, ``Multi-tenant web application framework architecture
   Development Conference on Information and Computer Science (NICS)}, Sept
   2015, pp. 40--48.
 
+\bibitem{Chong:2006:MultiTenantDataArchitecture}
+\BIBentryALTinterwordspacing
+F.~Chong, G.~Carraro, and R.~Wolter, ``Multi-tenant data architecture,'' 2006,
+  accessed: 23.03.2017. [Online]. Available:
+  \url{https://msdn.microsoft.com/en-us/library/aa479086.aspx}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Bezemer:2010:EnablingMultiTenancy}
+C.~P. Bezemer, A.~Zaidman, B.~Platzbeecker, T.~Hurkmans, and A.~. Hart,
+  ``Enabling multi-tenancy: An industrial experience report,'' in \emph{2010
+  IEEE International Conference on Software Maintenance}, Sept 2010, pp. 1--8.
+
 \end{thebibliography}
