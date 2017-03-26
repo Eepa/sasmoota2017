@@ -326,7 +326,7 @@ Email: eveliina.pakarinen@helsinki.fi}}
 % in the abstract
 \begin{abstract}
 
-Multi-tenancy is a high level architectural pattern which can be used in cloud computing environment when offering applications using Software as a Service business model. In multi-tenancy pattern service provider hosts a single instance of an application on his or her infrastructure. This application is accessed by multiple customers, so-called tenants, who share the resources of the infrastructure. Multi-tenancy is still a relatively new topic in scientific literature. The research domain of multi-tenancy is not yet mature which can be seen from the lack of industrial experience reports on multi-tenancy. The use of multi-tenancy pattern brings multiple benefits both to the service provider and to the customers. In addition to the benefits there are also some complexities that affect the use of multi-tenancy. In this paper the different variants of multi-tenancy in scientific literature are investigated from the perspective of Software as a Service business model. The connection between Software as a Service and multi-tenancy is also presented. Finally some challenges caused by the characteristics of multi-tenancy are presented. 
+Multi-tenancy is a high level architectural pattern which can be used in cloud computing environment when offering applications using Software as a Service business model. In multi-tenancy pattern service provider hosts a single instance of an application on his or her infrastructure. This application is accessed by multiple customers, so-called tenants. Tenants share the resources of the infrastructure. Multi-tenancy is still a relatively new topic in scientific literature. The research domain of multi-tenancy is not yet mature which can be seen from the lack of industrial experience reports on multi-tenancy. The use of multi-tenancy pattern brings multiple benefits both to the service provider and to the customers. In addition to the benefits there are also some challenges that affect the use of multi-tenancy. In this paper the different variants of multi-tenancy in scientific literature are investigated from the perspective of Software as a Service business model. The connection between Software as a Service and multi-tenancy is also investigated. Finally some challenges caused by the characteristics of multi-tenancy are presented. 
 
 \end{abstract}
 
@@ -342,21 +342,25 @@ Keywords: multi-tenancy, Software as a Service, definition of multi-tenancy
 
 \section{Introduction}
 
-\textit{Software as a Service (SaaS)} is a novel business model where software and the underlying ICT infrastructure are offered as an on-demand service for customers through Internet \cite{Bezemer:2010:MaintenanceDream}. In Software as a Service business model the service provider maintains the application and offers the software as a service to the customers \cite{Bezemer:2010:MaintenanceDream}. By using software offered by a third party companies can use various ICT services without maintaining or purchasing their own ICT infrastructure \cite{Bezemer:2010:MaintenanceDream}. 
+\textit{Software as a Service (SaaS)} is a novel business model where software and the underlying ICT infrastructure are offered as an on-demand service for customers through Internet \cite{Bezemer:2010:MaintenanceDream}. In Software as a Service business model the service provider maintains the application and offers the software as a service to the customers \cite{Bezemer:2010:MaintenanceDream}. By using software offered by a third party service provider companies can use various ICT services without maintaining or purchasing their own ICT infrastructure \cite{Bezemer:2010:MaintenanceDream}. 
 
-\textit{Multi-tenancy} is a high level architectural pattern which can be used when offering applications as Software as a Service in cloud computing environment \cite{Kabbedijk2015:Defining}. In multi-tenancy pattern the service provider hosts a single instance of the software product on his or her infrastructure and multiple customers, so called tenants, access the same instance of the software \cite{Bezemer:2010:MaintenanceDream}. The definition for a tenant is: \textit{"A tenant is the organizational entity which rents a multi-tenant Software as a Service solution \cite{Bezemer:2010:MaintenanceDream}."} A tenant groups typically multiple users of the same organization and these users are the stakeholders in the organization \cite{Bezemer:2010:MaintenanceDream}. 
+\textit{Multi-tenancy} is a high level architectural pattern which can be used when offering applications as Software as a Service in cloud computing environment \cite{Kabbedijk2015:Defining}. In multi-tenancy pattern the service provider hosts a single instance of the software product on his or her infrastructure and multiple customers, so-called tenants, access the same instance of the software \cite{Bezemer:2010:MaintenanceDream}. The definition for a tenant is: \textit{"A tenant is the organizational entity which rents a multi-tenant SaaS solution"} \cite{Bezemer:2010:MaintenanceDream}. A tenant groups typically multiple users of the same organization and these users are the stakeholders in the organization \cite{Bezemer:2010:MaintenanceDream}. 
 
-There are multiple benefits for the service provider when using multi-tenant architecture pattern when implementing Software as a Service applications. The first benefit is that the application deployment becomes easier because only one application instance has to be deployed \cite{Bezemer:2010:MaintenanceDream}. In multi-tenant model multiple customers access the same software instance and they do not need own dedicated instance of the software. This means that the customers share the same hardware resources when using multi-tenant Software as a Service application \cite{Guo:2007:FrameworkForNative}. That increases and improves the utilization rate of the hardware which is the second benefit of the multi-tenancy \cite{Bezemer:2010:MaintenanceDream}. 
+There are multiple benefits for the service provider when using multi-tenant architecture pattern when implementing Software as a Service applications. The first benefit is that the application deployment becomes easier because only one application instance has to be deployed \cite{Bezemer:2010:MaintenanceDream}. In multi-tenancy multiple customers access the same software instance and they do not need own dedicated instance of the software. This means that the customers share the same hardware resources when using multi-tenant Software as a Service application \cite{Guo:2007:FrameworkForNative}. That increases and improves the utilization rate of the hardware which is the second benefit of the multi-tenancy \cite{Bezemer:2010:MaintenanceDream}. 
 
-These two benefits reduce overall delivery costs of the application for the service provider \cite{Bezemer:2010:MaintenanceDream}. The reduced delivery costs of a multi-tenant application can help improve the profit margin for the service provider \cite{Guo:2007:FrameworkForNative}. The reduced delivery costs make it possible for the service provider to offer the service to the customers at lower service subscription costs \cite{Guo:2007:FrameworkForNative}. The reduced overall costs of a multi-tenant application make multi-tenant applications interesting for customers in the small and medium enterprise (SME) segment of the market \cite{Bezemer:2010:MaintenanceDream}.
+These two benefits reduce service provider's overall delivery costs of the application \cite{Bezemer:2010:MaintenanceDream}. The reduced delivery costs of a multi-tenant application can help improve service provider's profit margin \cite{Guo:2007:FrameworkForNative}. The reduced delivery costs make it possible for the service provider to offer the service to the customers at lower service subscription costs \cite{Guo:2007:FrameworkForNative}. The reduced overall costs of a multi-tenant application make multi-tenant applications interesting for customers in the small and medium enterprise (SME) segment of the market \cite{Bezemer:2010:MaintenanceDream}.
 
-The characteristics mentioned when describing multi-tenancy in scientific literature are sharing of hardware resources, possibility to configure the shared application instance in runtime and shared application and database instance \cite{Bezemer:2010:MaintenanceDream}. In addition to the benefits of the multi-tenancy there are also some challenges that come with the multi-tenancy. Challenges can arise in the application development, deployment and management phases \cite{Guo:2007:FrameworkForNative}. The three characteristics of multi-tenancy can cause some of the challenges of multi-tenancy. Areas where challenges can arise are for example in application performance, maintenance and security \cite{Bezemer:2010:MaintenanceDream}. 
+When describing multi-tenancy in scientific literature the three often mentioned characteristics are sharing of hardware resources, possibility to configure the shared application instance in runtime and shared application and database instance. Those characteristics are also part of the definition of multi-tenancy which is used in this seminar paper. 
 
-Multi-tenancy is still a relatively new topic in scientific literature in the domain of software and hardware systems \cite{Kabbedijk2015:Defining}. The term \textit{'multi-tenancy'} was explicitly mentioned for the first time in a scientific paper in year 2006 \cite{Kabbedijk2015:Defining, Carraro:2006:ArchitectureLongTail}. Since then many definitions for multi-tenancy have been proposed \cite{Kabbedijk2015:Defining}. Also many solutions related to implementing multi-tenancy have been proposed in the multi-tenancy research over the years but there has been very few industrial reports about experiences on multi-tenancy \cite{Kabbedijk2015:Defining}. This indicates that the research domain of multi-tenancy is not yet mature and that the solutions have not yet been implemented or evaluated. The high amount of proposals and the low amount of industrial reports can also indicate that there is a lack of cooperation between industry and academia in this domain \cite{Kabbedijk2015:Defining}.
+In addition to the benefits of multi-tenancy there are also some challenges that come with the use of multi-tenancy. Challenges can arise in the application development, deployment and management phases \cite{Guo:2007:FrameworkForNative}. The three characteristics of multi-tenancy can cause some of the challenges of multi-tenancy. Areas where challenges can arise are for example in application performance, maintenance and in security \cite{Bezemer:2010:MaintenanceDream}. 
 
-In this paper the different variants of multi-tenancy in scientific literature are investigated from the perspective of Software as a Service business model. The connection between Software as a Service and multi-tenancy is also investigates. Finally some possible challenges caused by the characteristics of multi-tenancy are presented.
+Multi-tenancy is still a relatively new topic in scientific literature in the domain of software and hardware systems \cite{Kabbedijk2015:Defining}. The term \textit{'multi-tenancy'} was explicitly mentioned for the first time in a scientific paper in year 2006 \cite{Kabbedijk2015:Defining, Carraro:2006:ArchitectureLongTail}. Since then many definitions for multi-tenancy have been proposed \cite{Kabbedijk2015:Defining}. Also many solutions related to implementing multi-tenancy have been proposed in the multi-tenancy research over the years but there has been very few industrial reports about experiences on multi-tenancy \cite{Kabbedijk2015:Defining}. 
 
-This paper is organized as follows. In Section 2 the research questions and the research methods for data collection for this paper are presented. In section 3 the different variants of multi-tenancy are presented from the viewpoint of a Software as a Service applications. In section 4 characteristics and challenges of multi-tenancy are presented. In section 5 the answers to the research questions are discussed. The paper is concluded section 6. 
+The low amount of industrial reports on multi-tenancy indicates that the research domain of multi-tenancy is not yet mature and that the proposed solutions have not yet been implemented or evaluated \cite{Kabbedijk2015:Defining}. The high amount of proposals and the low amount of industrial reports can also indicate that there is a lack of cooperation between industry and academia in multi-tenancy research domain \cite{Kabbedijk2015:Defining}.
+
+In this paper the different variants of multi-tenancy in scientific literature are investigated from the perspective of Software as a Service business model. The connection between Software as a Service business model and multi-tenancy is also investigated. Finally some possible challenges caused by the characteristics of multi-tenancy are presented.
+
+This paper is organized as follows. In Section 2 the research questions and the research methods for data collection for this paper are presented. In section 3 the different variants of multi-tenancy are presented from the viewpoint of a Software as a Service business model. In section 4 the characteristics of multi-tenancy and some challenges caused by those characteristics are presented. In section 5 the answers to the research questions are discussed. The paper is concluded section 6. 
 
 
 
@@ -378,129 +382,22 @@ This paper is organized as follows. In Section 2 the research questions and the 
 %\cite{Chong:2006:MultiTenantDataArchitecture}
 
 
-%\hfill mds
-% 
-%\hfill January 26, 2017
-%
-%\subsection{Clever Subsection Header}
-%My own subsection
-%
-%
-%\subsubsection{Clever Subsection Header}
-%My clever subsection text
 
 
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
-%
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation results for the network.}
-%\label{fig_sim}
-%\end{figure}
+\section{Research questions and methods for data collection}
 
-% Note that the IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
-
-
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command,
-% and the \label for the overall figure must come after \caption.
-% \hfil is used as a separator to get equal spacing.
-% Watch out that the combined width of all the subfigures on a 
-% line do not exceed the text width or a line break will occur.
-%
-%\begin{figure*}[!t]
-%\centering
-%\subfloat[Case I]{\includegraphics[width=2.5in]{box}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{box}%
-%\label{fig_second_case}}
-%\caption{Simulation results for the network.}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat[]), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-% Be aware that for subfig.sty to generate the (a), (b), etc., subfigure
-% labels, the optional argument to \subfloat must be present. If a
-% subcaption is not desired, just leave its contents blank,
-% e.g., \subfloat[].
-
-
-% An example of a floating table. Note that, for IEEE style tables, the
-% \caption command should come BEFORE the table and, given that table
-% captions serve much like titles, are usually capitalized except for words
-% such as a, an, and, as, at, but, by, for, in, nor, of, on, or, the, to
-% and up, which are usually not capitalized unless they are the first or
-% last word of the caption. Table text will default to \footnotesize as
-% the IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
-%\end{table}
-
-
-% Note that the IEEE does not put floats in the very first column
-% - or typically anywhere on the first page for that matter. Also,
-% in-text middle ("here") positioning is typically not used, but it
-% is allowed and encouraged for Computer Society conferences (but
-% not Computer Society journals). Most IEEE journals/conferences use
-% top floats exclusively. 
-% Note that, LaTeX2e, unlike IEEE journals/conferences, places
-% footnotes above bottom floats. This can be corrected via the
-% \fnbelowfloat command of the stfloats package.
-
-
-
-\section{Research questions and methods}
-
-The main research questions for this seminar paper are: 
+This seminar paper tries to provide a description of the different variants of multi-tenancy in scientific literature from the perspective of Software as a Service business model. The main research questions for this seminar paper are: 
 \begin{enumerate}
 \item How multi-tenancy is defined in scientific literature?
 \item Is there a connection between multi-tenancy and Software as a Service business model?
 \item What challenges the characteristics of multi-tenancy can cause?
 \end{enumerate}
-This seminar paper tries to provide a description of the different variants of multi-tenancy in scientific literature from the perspective of Software as a Service business model. 
 
-This seminar work is based on a technical article and academic papers. The topic of multi-tenancy was found during a search for papers for a different topic. Initial article which inspired the topic of this seminar paper was \textit{"Multi-Tenant Web Application Framework Architecture Pattern"} \cite{Bien:2015:MultiTenantWebApp}. After learning about multi-tenancy for the first time from this article the search for papers about multi-tenancy continued in the ACM Digital Library and in the IEEE Xplore Digital Library. 
+The work in this seminar paper is based on academic papers and technical articles. The topic for this seminar paper was found during a search for papers for a different topic. The initial article which inspired the topic of this seminar paper was \textit{"Multi-Tenant Web Application Framework Architecture Pattern"} by Bien and Thu \cite{Bien:2015:MultiTenantWebApp}. After learning about multi-tenancy for the first time from this article the search for papers about multi-tenancy continued in the ACM Digital Library and in the IEEE Xplore Digital Library. 
 
-The search was done with quick search using combinations and different variations of words \textit{"multi-tenancy"} or \textit{"multi-tenant"} with or without '-'-character or \textit{"SaaS"} or \textit{"Software as a Service"} and \textit{"architecture"}. After getting the results from the search the results were refined by setting the range of publication year from 2014 to 2016. After finding a couple of papers that discussed multi-tenancy the references in them were used to find more papers related to the theme. Web of Science was also used to find papers that had cited the papers found during the search in digital libraries.
+The search was done with quick search using combinations and different variations of words \textit{'multi-tenancy'} or \textit{'multi-tenant'} with or without '-'-character and \textit{'SaaS'} or \textit{'Software as a Service'} and \textit{'architecture'}. After getting the results from the search the results were refined by setting the range of publication year from 2014 to 2016. After finding a couple of papers that discussed multi-tenancy the references in those papers were used to find more papers related to the topic. Web of Science was also used to find papers that had cited the papers found during the search in digital libraries.
 
-The initial goal for data collection was to find as many papers as possible. After that the first thing to do was to filter out papers that were not suitable as sources for this seminar work. Characteristics for not suitable papers were for example that the paper was published in a too small conference or unknown journal or that it did not discuss multi-tenancy in application level in Software as a Service applications or that multi-tenancy was not discussed from architectural perspective. 
+The initial goal for data collection was to find as many papers as possible. After that the first thing to do was to filter out papers that were not suitable as sources for this seminar paper. Characteristics for not suitable papers were for example that the paper was published in a too small conference or in an unknown journal or that it did not discuss multi-tenancy in application level in Software as a Service applications or that multi-tenancy was not discussed from architectural perspective. 
 
 After that the remaining papers were organized to four groups based on the abstract, introduction and conclusion parts of the papers. The groups in which the papers were organized were: 
 \begin{enumerate}
@@ -509,7 +406,7 @@ After that the remaining papers were organized to four groups based on the abstr
 \item papers that propose some multi-tenant pattern or architecture
 \item supporting papers with relevant background information.
 \end{enumerate}
-The papers that belonged to group 1 were left out and the papers that belonged to groups 2, 3 and 4 were studied further. The references that are used in this seminar work are based on the papers that belonged to groups 2, 3 and 4. 
+The papers that belonged to group 1 were left out and the papers that belonged to groups 2, 3 and 4 were studied further. The references that are used in this seminar paper are based on the papers that belonged to groups 2, 3 and 4. 
 
 
 \section{Variants of multi-tenancy in scientific literature}
@@ -517,9 +414,9 @@ The papers that belonged to group 1 were left out and the papers that belonged t
 \subsection{The definition of multi-tenancy}
 
 
-Multi-tenancy is a high level architectural pattern which can be used to share computing resources when offering software products as Software as a Service \cite{Kabbedijk2015:Defining}. In multi-tenancy a single instance of an application is hosted on service provider’s infrastructure \cite{Kabbedijk2015:Defining}. This single instance is accessed by multiple tenants and can be customized according to the requirements of different tenants \cite{Kabbedijk2015:Defining}. Multi-tenancy has evolved from previous information technology paradigms like time-sharing, application service provider (ASP) model and multi-user model \cite{Kabbedijk2015:Defining}. Multi-tenancy was explicitly mentioned in scientific literature for the first time in the domain of software and hardware systems in year 2006 \cite{Kabbedijk2015:Defining}. 
+Multi-tenancy is a high level architectural pattern which can be used to share computing resources when offering software products using Software as a Service business model \cite{Kabbedijk2015:Defining}. In multi-tenancy a single instance of an application is hosted on service provider's infrastructure \cite{Kabbedijk2015:Defining}. This single instance is accessed by multiple tenants and can be customized according to the requirements of different tenants \cite{Kabbedijk2015:Defining}. Multi-tenancy has evolved from previous information technology paradigms like time-sharing, application service provider (ASP) model and multi-user model \cite{Kabbedijk2015:Defining}. Multi-tenancy was explicitly mentioned in scientific literature for the first time in the domain of software and hardware systems in year 2006 \cite{Kabbedijk2015:Defining, Carraro:2006:ArchitectureLongTail}. 
 
-In academic literature the definition of multi-tenancy has been varying and there has been differences in the interpretation of multi-tenancy among academics in academia \cite{Kabbedijk2015:Defining}. In order to chart and bridge the varying definitions of multi-tenancy and to provide an overview of the multi-tenancy domain Kabbedijk et al. \cite{Kabbedijk2015:Defining} performed a structural search in academic literature and blog posts. They proposed a comprehensive definition for multi-tenancy which is based on 43 different definitions of multi-tenancy presented in academic literature \cite{Kabbedijk2015:Defining}. Their definition of multi-tenancy is: \textit{"Multi-tenancy is a property of a system where multiple customers, so-called tenants, transparently share the system's resources, such as services, applications, databases, or hardware, with the aim of lowering costs, while still being able to exclusively configure the system to the needs of the tenant \cite{Kabbedijk2015:Defining}."} In their paper Kabbedijk et al. call for this definition to be used in future research on multi-tenancy \cite{Kabbedijk2015:Defining}.
+In academic literature the definition of multi-tenancy has been varying and there has been differences in the interpretation of multi-tenancy among academics in academia \cite{Kabbedijk2015:Defining}. In order to chart and bridge the varying definitions of multi-tenancy and to provide an overview of the multi-tenancy domain Kabbedijk et al. \cite{Kabbedijk2015:Defining} performed a structural search in academic literature and blog posts. They proposed a comprehensive definition for multi-tenancy which is based on 43 different definitions of multi-tenancy presented in academic literature \cite{Kabbedijk2015:Defining}. Their definition of multi-tenancy is: \textit{"Multi-tenancy is a property of a system where multiple customers, so-called tenants, transparently share the system's resources, such as services, applications, databases, or hardware, with the aim of lowering costs, while still being able to exclusively configure the system to the needs of the tenant"} \cite{Kabbedijk2015:Defining}. In their paper Kabbedijk et al. call for this definition to be used in future research on multi-tenancy \cite{Kabbedijk2015:Defining}.
 
 In the Figure \ref{figure:MTvsMILong} different system levels are illustrated in different variants of multi-tenancy and in single-tenancy. Two tenants are marked with group of users in the Figure \ref{figure:MTvsMILong}. The system levels marked with yellow background color represent application and software levels of the system. The infrastructure levels of the system are marked with purple background color and the database levels are marked with green background color. The levels of the system that are influenced by software level multi-tenancy are marked with solid borders and bold font style. Those levels are application instance, application server, database schema, database and database server \cite{Kabbedijk2015:Defining}. The levels that are not influenced by software level multi-tenancy are middleware, operating system, virtual machine and hardware and those levels are marked with dashed line borders and plain font style in the Figure \ref{figure:MTvsMILong}. 
 
@@ -547,7 +444,7 @@ As a comparison point to different multi-tenancy variants a single-tenancy appro
 
 In the academic research of multi-tenancy Software as a Service and architecture are important research topics and both of the topics are addressed a lot in multi-tenancy research \cite{Kabbedijk2015:Defining}. The frequent occurrence of those topics indicates that multi-tenancy is positioned as an architectural tactic for online software \cite{Kabbedijk2015:Defining}. 
 
-Software as a Service is a business model where software is offered as an on-demand service for customers through Internet \cite{Bezemer:2010:MaintenanceDream}. Simplistic characterization for Software as a Service is: \textit{"Software deployed as a hosted service and accessed over the Internet \cite{Carraro:2006:ArchitectureLongTail}."} From architectural perspective a mature and a well-designed Software as a Service application has three different attributes that separate it from a poorly designed Software as a Service application \cite{Carraro:2006:ArchitectureLongTail}. Those attributes are configurability, multi-tenant efficiency and scalability \cite{Carraro:2006:ArchitectureLongTail}.
+Software as a Service is a business model where software is offered as an on-demand service for customers through Internet \cite{Bezemer:2010:MaintenanceDream}. Simplistic characterization for Software as a Service is: \textit{"Software deployed as a hosted service and accessed over the Internet"} \cite{Carraro:2006:ArchitectureLongTail}. From architectural perspective a mature and a well-designed Software as a Service application has three different attributes that separate it from a poorly designed Software as a Service application \cite{Carraro:2006:ArchitectureLongTail}. Those attributes are configurability, multi-tenant efficiency and scalability \cite{Carraro:2006:ArchitectureLongTail}.
 
 With the help of these attributes a Software as a Service maturity model with four distinct levels can be defined \cite{Carraro:2006:ArchitectureLongTail}. Software as a Service maturity model expresses the maturity of a Software as a Service application. At each level of the maturity model one of the attributes of a mature Software as a Service application is added to the model \cite{Carraro:2006:ArchitectureLongTail}. The Figure \ref{figure:SaaSMaturity} presents the maturity model of a Software as a Service application and the attributes which are added to the model on levels one, two and three. 
 
