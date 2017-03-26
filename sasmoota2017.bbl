@@ -31,4 +31,20 @@ C.-P. Bezemer and A.~Zaidman, ``Multi-tenant saas applications: Maintenance
   \url{http://doi.acm.org.libproxy.helsinki.fi/10.1145/1862372.1862393}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Kabbedijk2015:Defining}
+\BIBentryALTinterwordspacing
+J.~Kabbedijk, C.-P. Bezemer, S.~Jansen, and A.~Zaidman, ``Defining
+  multi-tenancy: A systematic mapping study on the academic and the industrial
+  perspective,'' \emph{Journal of Systems and Software}, vol. 100, pp. 139 --
+  148, 2015. [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0164121214002313}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Guo:2007:FrameworkForNative}
+C.~J. Guo, W.~Sun, Y.~Huang, Z.~H. Wang, and B.~Gao, ``A framework for native
+  multi-tenancy application development and management,'' in \emph{The 9th IEEE
+  International Conference on E-Commerce Technology and The 4th IEEE
+  International Conference on Enterprise Computing, E-Commerce and E-Services
+  (CEC-EEE 2007)}, July 2007, pp. 551--558.
+
 \end{thebibliography}

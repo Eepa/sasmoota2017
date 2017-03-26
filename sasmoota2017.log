@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.18)  20 MAR 2017 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.18)  26 MAR 2017 15:10
 entering extended mode
 **./sasmoota2017.tex
 (sasmoota2017.tex
@@ -268,6 +268,12 @@ G,.JBIG2,.JB2,.eps]
 )
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ò in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -289,7 +295,7 @@ Missing character: There is no ô in font ptmr7t!
 <SaaSMaturity.png, id=8, 262.9825pt x 1253.68375pt>
 File: SaaSMaturity.png Graphic file (type png)
  <use SaaSMaturity.png>
-Package pdftex.def Info: SaaSMaturity.png used on input line 577.
+Package pdftex.def Info: SaaSMaturity.png used on input line 558.
 (pdftex.def)             Requested size: 262.98184pt x 1253.6807pt.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
@@ -318,11 +324,11 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
  [3 <./SaaSMaturity.png (PNG copy)>]
-<MTvsMILong.png, id=15, 720.6925pt x 1630.09pt>
+<MTvsMILong.png, id=15, 725.71124pt x 1630.09pt>
 File: MTvsMILong.png Graphic file (type png)
  <use MTvsMILong.png>
-Package pdftex.def Info: MTvsMILong.png used on input line 600.
-(pdftex.def)             Requested size: 720.69075pt x 1630.08603pt.
+Package pdftex.def Info: MTvsMILong.png used on input line 581.
+(pdftex.def)             Requested size: 725.70947pt x 1630.08603pt.
  [4 <./MTvsMILong.png (PNG copy)>]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ü in font ptmr7t!
@@ -358,19 +364,19 @@ Before submitting the final camera ready copy, remember to:
 
 [5] (sasmoota2017.aux) ) 
 Here is how much of TeX's memory you used:
- 3050 strings out of 493329
- 49550 string characters out of 3139063
- 120875 words of memory out of 3000000
- 6549 multiletter control sequences out of 15000+200000
+ 3052 strings out of 493329
+ 49603 string characters out of 3139063
+ 120881 words of memory out of 3000000
+ 6551 multiletter control sequences out of 15000+200000
  33007 words of font info for 62 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 39i,7n,37p,1219b,274s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,7n,37p,1174b,274s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
 c}<E:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><E:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><E:/Program Files/MiKTeX 2.9/fo
 nts/type1/urw/times/utmr8a.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on sasmoota2017.pdf (5 pages, 263248 bytes).
+Output written on sasmoota2017.pdf (5 pages, 265403 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
