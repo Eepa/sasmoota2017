@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.18)  22 APR 2017 23:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.2.18)  23 APR 2017 21:39
 entering extended mode
 **./sasmoota2017.tex
 (sasmoota2017.tex
@@ -285,9 +285,7 @@ File: SaaSMaturity.png Graphic file (type png)
 Package pdftex.def Info: SaaSMaturity.png used on input line 479.
 (pdftex.def)             Requested size: 262.98184pt x 1253.6807pt.
 
-Underfull \vbox (badness 1895) has occurred while \output is active []
-
- [5 <./SaaSMaturity.png (PNG copy)>] (sasmoota2017.bbl)
+[5 <./SaaSMaturity.png (PNG copy)>] (sasmoota2017.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -313,7 +311,7 @@ c}<E:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><E:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><E:/Program Files/MiKTeX 2.9/fo
 nts/type1/urw/times/utmr8a.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on sasmoota2017.pdf (6 pages, 274670 bytes).
+Output written on sasmoota2017.pdf (6 pages, 274710 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
